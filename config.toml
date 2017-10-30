@@ -1,0 +1,17 @@
+[[server]]
+    ip = "127.0.0.1"
+    port = 32768
+    user = "root"
+    pw = "pw"
+
+[[server]]
+    ip = "127.0.0.1"
+    port = 32769
+    user = "root"
+    pw = "pw2"
+
+[[server]]
+    ip = "127.0.0.1"
+    port = 32770
+    user = "root"
+    pw = "pw"

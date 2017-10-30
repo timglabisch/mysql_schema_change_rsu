@@ -1,0 +1,11 @@
+[package]
+name = "mysql_schema_change_rsu"
+version = "0.1.0"
+authors = ["timglabisch <tim@ainfach.de>"]
+
+[dependencies]
+mysql = "*"
+toml = "0.4"
+serde_derive = "*"
+serde = "*"
+clap = "*"
