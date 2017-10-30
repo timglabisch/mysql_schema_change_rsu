@@ -1,3 +1,9 @@
+usage: 
+
+```
+cargo run -- --db foo --query "CREATE TABLE test7 (id int(11) NOT NULL AUTO_INCREMENT, PRIMARY KEY (id)) ENGINE=InnoDB;"
+```
+
 ```
 docker run -p 3306 \
  -e MYSQL_ROOT_PASSWORD=pw  \

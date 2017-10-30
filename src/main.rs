@@ -53,14 +53,13 @@ fn main() {
         server.query(&format!("USE {};", &db)).expect("could select db");
         server.query("SET SESSION wsrep_OSU_method=RSU;").expect("query_failed");
         
-        let foo : Vec<usize> = server.conn().prep_exec("show variables like 'wsr%'", ()).map(|result| {
+        /*let foo : Vec<usize> = server.conn().prep_exec("SELECT CONNECTION_ID();", ()).map(|result| {
             result.map(|x| x.unwrap()).map(|row| {
                 println!("{:?}", row);
                 1
             }).collect()
-        }).unwrap();
-        //server.query(&query).expect("query failed.");
-
+        }).unwrap();*/
+        server.query(&query).expect("query failed.");
     }
 
 

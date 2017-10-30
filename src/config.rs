@@ -31,10 +31,10 @@ impl ConfigServer {
 impl Into<Opts> for ConfigServer {
     fn into(self) -> Opts {
         let mut builder = OptsBuilder::new();
-        builder.ip_or_hostname(Some("127.0.0.1"));
-        builder.tcp_port(32770);
-        builder.user(Some("root"));
-        builder.pass(Some("pw"));
+        builder.ip_or_hostname(self.ip);
+        builder.tcp_port(self.port.expect("port not given") as u16);
+        builder.user(self.user);
+        builder.pass(self.pw);
         builder.prefer_socket(false);
         builder.into()
     }

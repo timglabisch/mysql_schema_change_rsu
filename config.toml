@@ -8,7 +8,7 @@
     ip = "127.0.0.1"
     port = 32769
     user = "root"
-    pw = "pw2"
+    pw = "pw"
 
 [[server]]
     ip = "127.0.0.1"
